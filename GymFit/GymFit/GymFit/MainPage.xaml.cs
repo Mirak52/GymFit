@@ -12,6 +12,8 @@ namespace GymFit
         public MainPage()
         {
             InitializeComponent();
+            LoginImg.Source = ImageSource.FromResource("GymFit.icons.loginName.png");
+            
         }
     }
 }

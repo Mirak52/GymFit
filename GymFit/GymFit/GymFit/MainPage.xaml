@@ -3,11 +3,68 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GymFit"
              x:Class="GymFit.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Its  works!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+    <ContentPage.Content >
+        <Grid BackgroundColor="#2196F3">
+            <RelativeLayout>
+                <BoxView 
+                    Margin="45,200,0,0"
+                    HeightRequest="2" 
+                    WidthRequest="90"
+                    BackgroundColor="#BBDEFB"/>
+
+                <BoxView 
+                    Margin="235,200,0,0"
+                    HeightRequest="2"
+                    WidthRequest="90"
+                    BackgroundColor="#BBDEFB" />
+            </RelativeLayout>
+            <StackLayout >
+                <Label Text="LOGIN"
+                 HorizontalOptions="Center"
+                       Margin="0,185,0,0"
+                       FontSize="20"
+                       TextColor="White"/>
+            </StackLayout>
+            <StackLayout Margin="0,250,0,00" WidthRequest="250" HorizontalOptions="Center">
+                <Image x:Name="LoginImg" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Frame
+                    BackgroundColor="#0D47A1"
+                    
+                    Padding="10"
+                    Opacity="75"
+                    >
+                    <Entry x:Name="Login"
+                           PlaceholderColor="Snow"
+                           Placeholder="ENTER USERNAME"
+                           TextColor="White"
+                           />
+                </Frame>
+                <Frame
+                    Margin="0,10"
+                    BackgroundColor="#0D47A1"
+                    Padding="10"
+                    Opacity="75"
+                    >
+                    <Entry x:Name="Password"
+                           PlaceholderColor="Snow"
+                           Placeholder="ENTER PASSWORD"
+                           IsPassword="true"
+                           />
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="signIn" Text="SIGN IN"
+                    Margin="50,520,50,0"
+                    WidthRequest="300"
+                    BackgroundColor="White"
+                    TextColor="#2196F3"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                        />
+
+
+
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
