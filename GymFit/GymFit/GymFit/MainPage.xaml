@@ -28,10 +28,11 @@
             <StackLayout Margin="0,250,0,00" WidthRequest="250" HorizontalOptions="Center">
                 <Image x:Name="LoginImg" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Frame
-                    BackgroundColor="#0D47A1"
-                    
+                    BackgroundColor="#2196F3"
+                    OutlineColor="White"
                     Padding="10"
                     Opacity="75"
+                   
                     >
                     <Entry x:Name="Login"
                            PlaceholderColor="Snow"
@@ -41,14 +42,17 @@
                 </Frame>
                 <Frame
                     Margin="0,10"
-                    BackgroundColor="#0D47A1"
+                    BackgroundColor="#2196F3"
+                    OutlineColor="White"
                     Padding="10"
                     Opacity="75"
+                   
                     >
                     <Entry x:Name="Password"
                            PlaceholderColor="Snow"
                            Placeholder="ENTER PASSWORD"
                            IsPassword="true"
+                           
                            />
                 </Frame>
             </StackLayout>
